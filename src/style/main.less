@@ -1,0 +1,103 @@
+.stage{
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: 750px 1179px;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right:0;
+  overflow: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.fade-in{
+  animation: fade-in 1500ms forwards;
+}
+
+.fade-out{
+  animation: fade-out 500ms forwards;
+}
+
+.scale-out{
+  animation: scale-out 500ms forwards cubic-bezier(0.42, 1.74, 0.49, 0.64);
+}
+
+.fall-down{
+  animation: fall-down 500ms 500ms forwards cubic-bezier(0.42, 1.74, 0.49, 0.64);
+}
+
+.fall-right{
+  animation: fall-right 1000ms forwards;
+}
+
+.shack{
+  animation: shack 500ms 1000ms;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+@keyframes fade-out {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    transform:scale(1.2);
+  }
+}
+
+@keyframes scale-out {
+  from{
+    transform:scale(0.4);
+  }
+  to{
+    transform:scale(1);
+  }
+}
+
+@keyframes fall-down{
+  from{
+    transform:translate(0,-100px);
+  }
+  to{
+    transform:translate(0,0);
+  }
+}
+
+@keyframes fall-right{
+  from{
+    transform:translate(-200px,0);
+  }
+  to{
+    transform:translate(0,0);
+  }
+}
+
+@keyframes shack{
+  0%{
+    transform:rotate(10deg);
+  }
+  25%{
+     transform:rotate(0deg);
+   }
+  50%{
+    transform:rotate(-10deg);
+  }
+  75%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(10deg);
+  }
+}

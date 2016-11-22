@@ -25,8 +25,8 @@ module.exports={
                 loader:'babel',
                 include:APP_PATH
             },{
-                test:/\.scss$/,
-                loaders:['style','css','px2rem','autoprefixer','sass']
+                test:/\.less$/,
+                loaders:['style','css','px2rem','autoprefixer','less']
             },{
                 test:/\.(png|jpg|svg|gif)$/,
                 loader:'url',

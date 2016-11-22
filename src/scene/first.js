@@ -1,18 +1,18 @@
 /**
  * Created by ifchangetoclzp on 2016/11/22.
  */
-import '../style/first.scss'
+import '../style/first.less'
 
 console.log('场景1载入成功');
 
-export default function(stage){
-    stage.className='scene-0';
-    stage.innerHTML='<div class="msg-0"></div>';
-    var clicker0=document.createElement('div');
-    clicker0.className='clicker-0';
-    stage.appendChild(clicker0);
+export default function(){
     return new Promise((resolve)=>{
-        clicker0.addEventListener('click',function(){
+        $('.stage-0 .clicker-0').click(()=>{
+            $('.stage-0 .clicker-1,.stage-0 .msg-1').show().addClass('fade-in');
+            $('.stage-0 .clicker-0,.stage-0 .msg-0').addClass('fade-out');
+        });
+        $('.stage-0 .clicker-1').click(()=>{
+            $('.stage-0').addClass('fade-out');
             resolve();
         });
     });
