@@ -28,6 +28,7 @@ const stage=document.getElementById('stage');
 async function start(){
     var scene0=await loadScene(0);
     await scene0(stage);
+    var scene1=await loadScene(1);
 }
 
 start();
