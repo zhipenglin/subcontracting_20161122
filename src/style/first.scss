@@ -1,0 +1,22 @@
+#stage.scene-0{
+  background-image: url('../img/scene_0_bg.jpg');
+  background-size: 750px 1179px;
+  .msg-0{
+    background-image: url('../img/scene_0_item_2.png');
+    background-size: 677px 1140px;
+    width: 677px;
+    height: 1140px;
+    top:-116px;
+    left:122px;
+    position: absolute;
+  }
+  .clicker-0{
+    width: 340px;
+    height:100px;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    transform: rotate(3deg);
+    top:400px;
+    left:160px;
+  }
+}
