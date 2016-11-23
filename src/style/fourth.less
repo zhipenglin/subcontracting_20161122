@@ -1,3 +1,38 @@
-#stage.scene-3 {
+.stage-3 {
   background-image: url('../img/scene_3_bg.jpg');
+  .deng{
+    background-image: url('../img/scene_3_item_1.png');
+    width: 353px;
+    height: 378px;
+    background-size: 353px 378px;
+    position: absolute;
+    left: 70px;
+    top:-20px;
+  }
+  .dog{
+    background-image:url('../img/dog_2.png');
+    width: 406px;
+    height: 355px;
+    background-size: 406px 355px;
+    position: absolute;
+    top:600px;
+    left: 300px;
+    &.action{
+      animation: dog 1.5s infinite;
+    }
+  }
+  .wenzi{
+    .zi{
+
+    }
+  }
+}
+
+@keyframes dog {
+  from{
+    background-image:url('../img/dog_2.png');
+  }
+  to{
+    background-image:url('../img/dog_1.png');
+  }
 }
