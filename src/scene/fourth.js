@@ -37,9 +37,9 @@ export default function() {
                     $('.stage-3 .wenzi').append('<div class="zi_8"></div>');
                 },5000);
                 setTimeout(function(){
-                    //$('.stage-3').addClass('fade-out');
-                    //resolve();
-                },2000);
+                    $('.stage-3').addClass('fade-out');
+                    resolve();
+                },7000);
             },500);
         });
     });

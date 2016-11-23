@@ -10,13 +10,38 @@
     top:120px;
   }
   .zi{
-    background-image: url('../img/end.png');
+    background-image: url('../img/jiewei_zi.png');
     width: 448px;
-    height: 537px;
-    background-size: 448px 537px;
+    height: 556px;
+    background-size: 448px 556px;
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+  }
+  .yun{
+    background-image: url('../img/yun.png');
+    background-size: 360px 322px;
+    width: 179px;
+    height: 106px;
+    background-position: 0px 0px;
+    position: absolute;
+    left: 140px;
+    top:860px;
+    animation: yun 2s steps(1, start) infinite;
+  }
+  @keyframes yun {
+    0%{
+      background-position: 0px 0px;
+    }
+    25%{
+      background-position: 0px 108px;
+    }
+    50%{
+      background-position: 0px 216px;
+    }
+    100%{
+      background-position: 181px 108px;
+    }
   }
 }

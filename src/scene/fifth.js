@@ -10,7 +10,7 @@ export default function() {
             setTimeout(()=>{
                 $('.stage-4').addClass('fade-out');
                 reslove();
-            },2000);
+            },3000);
 
         });
     });

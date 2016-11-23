@@ -26,7 +26,7 @@ module.exports={
                 include:APP_PATH
             },{
                 test:/\.less$/,
-                loaders:['style','css','px2rem?remUnit=65&remPrecision=8','autoprefixer','less']
+                loaders:['style','css','px2rem?remUnit=70&remPrecision=8','autoprefixer','less']
             },{
                 test:/\.(png|jpg|svg|gif)$/,
                 loader:'url',
