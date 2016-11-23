@@ -3,10 +3,14 @@
  */
 import './style/main.less'
 import $ from 'jquery'
+import scene0 from './scene/first'
+import scene1 from './scene/second'
+import scene2 from './scene/third'
+import scene3 from './scene/fourth'
 
 window.$=$;
 
-function loadScene(index){
+/*function loadScene(index){
     console.log('正在载入场景...');
     switch (index){
         case 0:
@@ -38,16 +42,12 @@ function loadScene(index){
             });
             break;
     }
-}
+}*/
 
 async function start(){
-    var scene0=await loadScene(0);
     await scene0();
-    var scene1=await loadScene(1);
     await scene1();
-    var scene2=await loadScene(2);
     await scene2();
-    var scene3=await loadScene(3);
     await scene3();
 }
 
