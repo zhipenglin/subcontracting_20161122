@@ -43,8 +43,8 @@ html,body,.stage{
   animation: fall-right 1000ms forwards;
 }
 
-.shack{
-  animation: shack 500ms 1000ms;
+.shan{
+  animation: scale 8000ms infinite linear;
 }
 
 @keyframes fade-in {
@@ -94,20 +94,17 @@ html,body,.stage{
   }
 }
 
-@keyframes shack{
+@keyframes scale{
   0%{
-    transform:rotate(10deg);
+    opacity:0.5;
+    transform:scale(0.5);
   }
-  25%{
-     transform:rotate(0deg);
-   }
   50%{
-    transform:rotate(-10deg);
-  }
-  75%{
-    transform:rotate(0deg);
+    opacity:1;
+    transform:scale(1.2);
   }
   100%{
-    transform:rotate(10deg);
+    opacity:0.5;
+    transform:scale(0.5);
   }
 }

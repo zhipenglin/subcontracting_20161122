@@ -7,6 +7,8 @@ import scene0 from './scene/first'
 import scene1 from './scene/second'
 import scene2 from './scene/third'
 import scene3 from './scene/fourth'
+import scene4 from './scene/fifth'
+import scene5 from './scene/end'
 
 window.$=$;
 
@@ -49,6 +51,8 @@ async function start(){
     await scene1();
     await scene2();
     await scene3();
+    await scene4();
+    await scene5();
 }
 
 start();
