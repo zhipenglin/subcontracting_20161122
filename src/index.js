@@ -46,6 +46,9 @@ window.$=$;
     }
 }*/
 
+
+
+
 async function start(){
     await scene0();
     await scene1();
