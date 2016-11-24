@@ -1,5 +1,22 @@
 .stage-0{
   background-image: url('../img/scene_0_bg.jpg');
+  .quan{
+    width: 80px;
+    height: 80px;
+    border: solid 1PX #fff;
+    background: rgb(255,255,255,0.4);
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    &:after{
+      content:'点击';
+      color:#999;
+    }
+    animation: scale 2000ms infinite linear;
+  }
   .msg-0{
     background-image: url('../img/scene_0_item_1.png');
     background-size: 453px 706px;
@@ -8,6 +25,10 @@
     top:320px;
     left:124px;
     position: absolute;
+    .quan{
+      top:320px;
+      left:300px;
+    }
   }
   .clicker-0{
     width: 360px;
@@ -25,6 +46,10 @@
     top:320px;
     left:124px;
     position: absolute;
+    .quan{
+      top:200px;
+      left:320px;
+    }
   }
   .clicker-1{
     width: 360px;
